@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Car Colloction </title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<!-- reset CSS -->
+<style>
+    body {
+        padding: 0%;
+        margin: 0%;
+        background: url('img/black.jpg');
+        font-family: cursive;
+    }
+
+    .left {
+
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        left: 30px;
+
+    }
+
+    .left img {
+        width: 120px;
+        /*filter use convert color
+        filter: invert();*/
+
+    }
+
+    .left div {
+        text-align: center;
+        display:block;
+
+    }
+
+    .mid {
+        text-decoration: none;
+        width: 800px;
+        margin: 15px auto;
+        display: block;
+
+    }
+
+    .right {
+        position: absolute;
+        top: 15px;
+        right: 0px;
+        display: block;
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+    color: aqua;
+    padding: 5px 51px;
+    margin: 8px 1px;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 18px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: red;
+
+    }
+
+    .btn {
+        margin: 0px 10px;
+        padding: 1px 12px;
+        border: 2px solid;
+        border-radius: 8px;
+        font-size: 15px;
+        background-color: black;
+        cursor: pointer;
+        color: aqua;
+        font-family: cursive;
+    }
+
+    .btn:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+    .btn:visited {
+        color: darkgoldenrod;
+    }
+
+    .container {
+
+        padding: 77px 61px;
+        margin: 49px 230px;
+        color: aqua;
+        width: 30%;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 86%;
+        padding: 4px;
+        margin: 9px auto;
+        font-size: 22px;
+        border-radius: 23px;
+        font-family: cursive;
+        border: 5px solid;
+        color: aqua;
+        background-color: black;
+    }
+    .form-group input:hover{
+        border: 5px solid;
+        color: red;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    h1:hover{
+        color: red;
+    }
+   
+    .container button {
+        padding: 6px 0px;
+        margin: 16px auto;
+        display: block;
+        width: 399px;
+        border: solid;
+        font-size: 22px;
+        border-radius: 24px;
+    }
+    #LL{
+        color: aqua;
+        background-color: black;
+    }
+    
+</style>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="left">
+                <marquee behavior="alternate" scrollamount="10" height="50" width="200%" direction="left"> <img
+                        src="img/photo.png" alt=""></marquee>
+            </div>
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Car Colloction</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn">Contact Us</button>
+                <button class="btn">Email Us</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Make Your Car</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Job">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your country">
+            </div>
+            <button class="btn">Submit</button>
+            <select name="car" id="LL">
+                <option value="checkbox">BMW</option>
+                <option value="checkbox">Aodi</option>
+                <option value="checkbox">Mustang</option>
+                <option value="checkbox">R-R</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
